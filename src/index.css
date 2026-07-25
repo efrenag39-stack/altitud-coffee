@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+
+  --color-altitud-navy: #0B1F3A;
+  --color-altitud-sky: #5DADE2;
+  --color-altitud-aluminum: #BFC9CA;
+  --color-altitud-cloud: #F8F9F9;
+  --color-altitud-coffee: #6F4E37;
+  --color-altitud-gold: #C9A227;
+}
+
+@layer utilities {
+  .font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+  }
+  .font-poppins {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Radar scan line animation */
+  @keyframes radar-scan {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .animate-radar {
+    animation: radar-scan 8s linear infinite;
+  }
+
+  /* Cloud float animation */
+  @keyframes cloud-float {
+    0%, 100% { transform: translateY(0px) translateX(0px); }
+    50% { transform: translateY(-10px) translateX(5px); }
+  }
+
+  .animate-cloud {
+    animation: cloud-float 6s ease-in-out infinite;
+  }
+
+  /* Runway lights pulse */
+  @keyframes runway-pulse {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 1; }
+  }
+
+  .animate-runway {
+    animation: runway-pulse 2s ease-in-out infinite;
+  }
+}
+
+/* Custom scrollbar for terminal sleekness */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B1F3A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C9A227;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5DADE2;
+}

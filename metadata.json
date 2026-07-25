@@ -1,0 +1,6 @@
+{
+  "name": "Altitud Coffee",
+  "description": "Cafetería de especialidad inspirada en la aviación y el café premium. Cada taza, un nuevo destino.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
