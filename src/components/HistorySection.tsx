@@ -1,6 +1,7 @@
 import React from 'react';
 import { Plane, Coffee, Compass, Gift, Calendar, Sparkles, CheckCircle2, Tag, ArrowRight } from 'lucide-react';
 import logoImg from '../assets/logo.jpg';
+import hangarImg from '../assets/hangar_coffee_shop.jpg';
 
 export const HistorySection: React.FC = () => {
   return (
@@ -30,10 +31,9 @@ export const HistorySection: React.FC = () => {
           <div className="lg:col-span-6 relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-[#C9A227]/30 group">
               <img
-                src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&q=80&w=800"
-                alt="Origen Altitud Coffee Hangar"
+                src={hangarImg}
+                alt="Origen Altitud Coffee Hangar 01 Interior Cafetería Aviación"
                 className="w-full h-[380px] object-cover group-hover:scale-105 transition-transform duration-700"
-                referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0B1F3A] via-transparent to-transparent opacity-80" />
               <div className="absolute bottom-6 left-6 right-6 text-white space-y-2">

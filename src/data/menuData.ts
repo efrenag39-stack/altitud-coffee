@@ -1,4 +1,5 @@
 import { MenuItem } from '../types';
+import pilotJuniorImg from '../assets/pilot_junior_coffee.jpg';
 
 export const categoriesList = [
   'Todos',
@@ -17,6 +18,18 @@ export const categoriesList = [
 ];
 
 export const menuItemsData: MenuItem[] = [
+  {
+    id: 'm-pilot-junior',
+    name: 'Café Pilot Junior',
+    description: 'Especialidad de la casa servida en una taza clásica de cerámica con cremosa espuma y arte latte diseñado con la figura de un avión en pleno vuelo.',
+    price: 5.50,
+    category: 'Cafés Calientes',
+    image: pilotJuniorImg,
+    recommended: true,
+    firstClass: true,
+    altitude: '1,800m',
+    origin: 'Edición Especial Pilot'
+  },
   // Cafés Calientes & Espresso
   {
     id: 'm-1',

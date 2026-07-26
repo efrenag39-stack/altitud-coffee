@@ -204,7 +204,7 @@ export const ReservationSection: React.FC = () => {
                   </label>
                   <div className="grid grid-cols-3 gap-3">
                     {[
-                      { id: 'terminal', label: 'Lounge Terminal' },
+                      { id: 'terminal', label: 'Zona Altitud Coffee' },
                       { id: 'window', label: 'Ventanilla Runway' },
                       { id: 'cockpit', label: 'Vista a Cabina Barista' },
                     ].map((seat) => (

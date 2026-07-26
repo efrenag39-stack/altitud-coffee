@@ -152,15 +152,15 @@ export const FlightAttendantAssistant: React.FC = () => {
       };
     }
 
-    if (lower.includes('café') || lower.includes('cafe') || lower.includes('recomi') || lower.includes('bebida') || lower.includes('insignia') || lower.includes('espresso') || lower.includes('cappuccino') || lower.includes('latte')) {
+    if (lower.includes('pilot') || lower.includes('junior') || lower.includes('café') || lower.includes('cafe') || lower.includes('recomi') || lower.includes('bebida') || lower.includes('insignia') || lower.includes('espresso') || lower.includes('cappuccino') || lower.includes('latte')) {
       return {
         id: (Date.now() + 1).toString(),
         sender: 'attendant',
-        text: '☕ Te recomiendo nuestra estrella First Class: el "Cappuccino Altitud" con espuma "Nube de Cumulonimbo" y canela, o el potente "Capitán Espresso" elaborado con granos seleccionados a 1,800 msnm. Si prefieres algo refrescante, prueba nuestro "Cold Brew Turbulencia".',
+        text: '☕ ¡Te fascinará nuestro nuevo "Café Pilot Junior"! Servido en una taza clásica de cerámica con cremosa espuma y la figura de un avión dibujada en arte latte. También te sugiero el "Cappuccino Altitud" o el potente "Capitán Espresso".',
         time: timeNow,
         actionButton: {
           label: 'Ver Menú de Especialidades',
-          targetId: 'especialidades'
+          targetId: 'menu'
         }
       };
     }
